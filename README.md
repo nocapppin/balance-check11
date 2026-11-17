@@ -19,6 +19,7 @@ Automation tool for checking the balance of gift cards issued by various provide
 - [Best Buy](https://www.bestbuy.com/gift-card-balance) - `bestbuy`
 - [Home Depot](https://www.homedepot.com/mycheckout/giftcard) - `homedepot` <sup>CAPTCHA</sup>
 - [Starbucks](https://www.starbucks.com/card) - `starbucks`
+- [Starbucks Canada](https://www.starbucks.ca/gift) - `starbucksca`
 
 Providers marked with <sup>CAPTCHA</sup> will require an [Anti-CAPTCHA](https://anti-captcha.com) API key.
 
@@ -95,6 +96,14 @@ Example (for the `blackhawk` provider):
 | card_number      | exp_month | exp_year | cvv |
 |------------------|-----------|----------|-----|
 | 4111111111111111 | 12        | 24       | 999 |
+
+Example (for the `starbucksca` provider):
+
+| card_number      | pin      |
+|------------------|----------|
+| 6080123456789012 | 12345678 |
+
+`starbucksca` expects a 16-digit Starbucks Canada card number and the 8-digit security code from the back of the card (CSV header still uses `pin`).
 
 ## Contributing
 

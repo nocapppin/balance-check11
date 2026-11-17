@@ -10,4 +10,5 @@ __all__ = [
     "prepaidgiftbalance",
     "spafinder",
     "starbucks",
+    "starbucksca",
 ]
